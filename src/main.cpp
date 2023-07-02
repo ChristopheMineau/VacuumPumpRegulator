@@ -6,7 +6,7 @@
 #define LED 13
 #define DEBUG true
 #define DEBOUNCE_TIME 500
-#define HYSTERESIS 10
+#define HYSTERESIS 100
 
 // Note : Lowest pressure = -0.85bar , sensor = 146
 //        Highest prssure = 0 bar, sensor = 897
@@ -123,3 +123,4 @@ void loop() {
   pressure_regulator.handle();
   delay(100);
 }
+
